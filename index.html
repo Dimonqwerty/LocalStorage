@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/34a3860714.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <section class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-list text-success"></i>
+            Phone <span class="text-success"> Number </span> Book
+        </h1>
+        <form id="list-form">
+            <div class="form-group my-4">
+                <input type="number" id="number" class="form-control" placeholder="Number">
+            </div>
+            <div class="form-group my-4">
+                <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+            <input type="submit" value="Add" class="btn btn-success my-4">
+        </form>
+        <table class="table table-succes">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Element</th>
+                    <th>ID</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="element-list"></tbody>
+        </table>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
